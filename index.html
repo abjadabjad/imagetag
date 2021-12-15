@@ -1,18 +1,23 @@
 
 <img src="1t.png" usemap="#image-map">
-<audio id="sound1" src="twitter_notificacion.mp3" preload="auto"></audio>
+<audio id="twitter" src="twitter_notificacion.mp3" preload="auto"></audio>
+<audio id="mix" src="mix.mp3" preload="auto"></audio>
 
     <script>
-      function play() {
-        var audio = document.getElementById("sound1");
+      function playtwitter() {
+        var audio = document.getElementById("twitter");
+        audio.play();
+      }
+          function playmix() {
+        var audio = document.getElementById("mix");
         audio.play();
       }
     </script>
 <map name="image-map">
- <area target="_blank" alt="" title="" href="" onclick="javascript:play(); return false;" coords="912,80,1012,48,1039,119,953,203,947,152,943,133,930,104" shape="poly">
-   <area target="_blank" alt="" title="" href="" onclick="javascript:play(); return false;" coords="216,70,205,83,213,97,227,87" shape="poly">
-    <area target="_blank" alt="" title="" href="" onclick="javascript:play(); return false;" coords="189,277,180,286,190,299,202,294" shape="poly">
-    <area target="_blank" alt="" title="" href="" onclick="javascript:play(); return false;" coords="259,473,258,486,265,494,271,484" shape="poly">
+ <area target="_blank" alt="" title="" href="" onclick="javascript:playmix(); return false;" coords="912,80,1012,48,1039,119,953,203,947,152,943,133,930,104" shape="poly">
+   <area target="_blank" alt="" title="" href="" onclick="javascript:playtwitter(); return false;" coords="216,70,205,83,213,97,227,87" shape="poly">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:playtwitter(); return false;" coords="189,277,180,286,190,299,202,294" shape="poly">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:playtwitter(); return false;" coords="259,473,258,486,265,494,271,484" shape="poly">
     <area target="_blank" alt="" title="" href="https://twitter.com/ma3alykalifa2?lang=en" coords="267,493,389,514" shape="rect">
     <area target="_blank" alt="" title="" href="https://twitter.com/ali_aloun1122?lang=ar-x-fm" coords="825,151,944,172" shape="rect">
     <area target="_blank" alt="" title="" href="https://twitter.com/q8bird1" coords="345,561,427,584" shape="rect">
