@@ -5,8 +5,8 @@
 <audio id="4" src="mix.mp3" preload="auto"></audio>
 
 <script>
-    function playmix() {
-        var audio = document.getElementById("mix");
+    function 1() {
+        var audio = document.getElementById("1");
 
         if (audio.duration > 0 && !audio.paused) {
             audio.pause();
@@ -14,8 +14,8 @@
         } else {
             audio.play();
         }
-           function playmix() {
-        var audio = document.getElementById("mix");
+           function2() {
+        var audio = document.getElementById("2");
 
         if (audio.duration > 0 && !audio.paused) {
             audio.pause();
@@ -23,8 +23,8 @@
         } else {
             audio.play();
         }
-           function playmix() {
-        var audio = document.getElementById("mix");
+           function 3() {
+        var audio = document.getElementById("3");
 
         if (audio.duration > 0 && !audio.paused) {
             audio.pause();
@@ -32,8 +32,8 @@
         } else {
             audio.play();
         }
-           function playmix() {
-        var audio = document.getElementById("mix");
+           function 4() {
+        var audio = document.getElementById("4");
 
         if (audio.duration > 0 && !audio.paused) {
             audio.pause();
@@ -42,3 +42,4 @@
             audio.play();
         }
     }
+    
