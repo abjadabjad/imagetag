@@ -1,12 +1,6 @@
-body {
-    background: rgb(19, 161, 0);
-    overflow: hidden;
-    margin: 0;
+.inner {
+
     position: absolute;
 
 }
 
-canvas {
-  
-    
-}
