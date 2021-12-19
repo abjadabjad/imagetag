@@ -1,6 +1,12 @@
 body {
-
-    overflow: visible;
+    background: black;
+    overflow: hidden;
     margin: 0;
+    position: absolute;
+
 }
 
+canvas {
+    background: #000;
+    
+}
