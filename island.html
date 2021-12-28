@@ -1,0 +1,27 @@
+<img src="island.jpg" usemap="#image-map">
+<audio id="8" src="8.mp3" preload="auto"></audio>
+
+
+
+<script>
+
+    function f8() {
+        var audio = document.getElementById("8");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+</script>
+
+
+<map name="image-map">
+
+    <area target="_blank" alt="" title="" href="" onclick="javascript:f8(); return false;" coords="284,202,230,241,281,324,342,288" shape="poly">
+        
+  
+  </map>
