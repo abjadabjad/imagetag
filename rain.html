@@ -1,0 +1,26 @@
+<img src="rain.jpg" usemap="#image-map">
+<audio id="9" src="9.mp3" preload="auto"></audio>
+
+
+
+<script>
+
+    function f9() {
+        var audio = document.getElementById("9");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+</script>
+
+
+<map name="image-map">
+
+<area target="_blank" alt="" title="" href="" onclick="javascript:f9(); return false;" coords="0,661,115,508,215,392,244,315,319,87,456,-2,782,13,883,56,1060,121,1071,239,1071,267,955,377,1070,449,1055,509,926,637,1005,795,1055,901,1075,903,1079,965,1089,1035,967,1069,731,1049,571,1042,492,745,5,661,11,661,18,671" shape="poly">        
+  
+  </map>
