@@ -1,6 +1,7 @@
 <img src="flower.jpg" usemap="#image-map">
 <audio id="f1" src="f1.mp3" preload="auto"></audio>
 <audio id="f14" src="f14.mp3" preload="auto"></audio>
+<audio id="f13" src="f13.mp3" preload="auto"></audio>
 
 
 <script>
@@ -28,6 +29,19 @@
         }
     }
 
+    
+    
+    
+           function f113() {
+        var audio = document.getElementById("f13");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
 </script>
 
 
@@ -35,7 +49,14 @@
 
     <area target="_blank" alt="" title="" href="" onclick="javascript:f11(); return false;"coords="981,789,964,760,919,865,874,932,784,973,810,1011,915,948" shape="poly">
      <area target="_blank" alt="" title="" href="" onclick="javascript:f114(); return false;"coords="59,1093,220,1254" shape="rect">
+     <area target="_blank" alt="" title="" href="" onclick="javascript:f113(); return false;"coords="844,593,791,531" shape="rect">
+         <area target="_blank" alt="" title="" href="" onclick="javascript:f114(); return false;"coords="800,691,842,749" shape="rect">
+        <area target="_blank" alt="" title="" href="" onclick="javascript:f114(); return false;"coords="756,819,859,816,880,887,855,930,784,957,748,935" shape="poly">
+         <area target="_blank" alt="" title="" href="" onclick="javascript:f114(); return false;"coords="783,1016,856,1069" shape="rect">
 
+
+
+    
      <area target="_blank" alt="" title="" href="https://ar.wikipedia.org/wiki/%D9%88%D8%B1%D8%AF%D8%A9_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1%D9%8A%D8%A9" coords="884,435,780,328" shape="rect">
 
   </map>
