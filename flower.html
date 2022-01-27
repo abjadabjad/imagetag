@@ -9,6 +9,7 @@
 <audio id="f5" src="f5.mp3" preload="auto"></audio>
 <audio id="f22" src="f22.mp3" preload="auto"></audio>
 <audio id="f23" src="f23.mp3" preload="auto"></audio>
+<audio id="f24" src="f24.mp3" preload="auto"></audio>
 
 
 
@@ -284,7 +285,20 @@
         }
     }
     
+   
     
+    
+    
+                                  function f124() {
+        var audio = document.getElementById("f24");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
     
     
 </script>
@@ -300,10 +314,11 @@
          <area target="_blank" alt="" title="" href="" onclick="javascript:f120(); return false;"coords="783,1016,856,1069" shape="rect">
          <area target="_blank" alt="" title="" href="" onclick="javascript:f119(); return false;"coords="1030,796,992,809,985,847,989,870,1011,887,1008,902,973,918,935,924,925,934,932,964,974,973,1049,950,1077,916,1082,870,1066,822" shape="poly">
 
-         <area target="_blank" alt="" title="" href="" onclick="javascript:f15(); return false;"coords="178,353,264,475,307,574,331,680,304,635,275,622,248,511" shape="poly">
+                <area target="_blank" alt="" title="" href="" onclick="javascript:f15(); return false;"coords="409,915,369,803,352,801,341,798,319,803,344,905,360,878,383,890,404,923,407,941,390,959,380,980,379,1002,400,1055,425,1027,428,1002" shape="poly">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:f15(); return false;"coords="178,353,264,475,307,574,331,680,304,635,275,622,248,511" shape="poly">
          <area target="_blank" alt="" title="" href="" onclick="javascript:f122(); return false;"coords="306,1101,240,1059,173,1025,134,1016,91,1035,65,1052,77,1031,117,1014,148,1009,188,1018,241,1040,280,1062,323,1094" shape="poly">
              <area target="_blank" alt="" title="" href="" onclick="javascript:f123(); return false;"coords="298,954,252,915,198,879,158,855,137,853,106,869,78,902,68,921,92,906,127,869,150,868,205,903,238,931,276,954,283,962" shape="poly">
-
+             <area target="_blank" alt="" title="" href="" onclick="javascript:f124(); return false;"coords="658,813,759,701,821,651,906,606,930,606,964,638,981,668,964,654,941,626,907,615,866,633,823,664,786,696,716,768,694,800,648,867" shape="poly">
 
 
     
