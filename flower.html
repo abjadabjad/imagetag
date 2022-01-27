@@ -8,6 +8,8 @@
 <audio id="f19" src="f19.mp3" preload="auto"></audio>
 <audio id="f5" src="f5.mp3" preload="auto"></audio>
 <audio id="f22" src="f22.mp3" preload="auto"></audio>
+<audio id="f23" src="f23.mp3" preload="auto"></audio>
+
 
 
 
@@ -271,6 +273,20 @@
     }
     
     
+                                       function f123() {
+        var audio = document.getElementById("f23");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+    
+    
+    
+    
 </script>
 
 
@@ -286,7 +302,8 @@
 
          <area target="_blank" alt="" title="" href="" onclick="javascript:f15(); return false;"coords="178,353,264,475,307,574,331,680,304,635,275,622,248,511" shape="poly">
          <area target="_blank" alt="" title="" href="" onclick="javascript:f122(); return false;"coords="306,1101,240,1059,173,1025,134,1016,91,1035,65,1052,77,1031,117,1014,148,1009,188,1018,241,1040,280,1062,323,1094" shape="poly">
-    
+             <area target="_blank" alt="" title="" href="" onclick="javascript:f123(); return false;"coords="298,954,252,915,198,879,158,855,137,853,106,869,78,902,68,921,92,906,127,869,150,868,205,903,238,931,276,954,283,962" shape="poly">
+
 
 
     
