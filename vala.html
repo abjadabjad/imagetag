@@ -1,0 +1,26 @@
+<img src="vala.jpg" usemap="#image-map">
+<audio id="8" src="8.mp3" preload="auto"></audio>
+
+
+
+<script>
+
+    function f8() {
+        var audio = document.getElementById("8");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+</script>
+
+
+<map name="image-map">
+
+<area target="_blank" alt="" title="" href="" onclick="javascript:f8(); return false;" coords="400,918,387,936,384,950,400,1002,406,1048,442,1134,512,1216,559,1250,567,1248,614,1218,676,1143,720,1048,737,966,737,951,737,939,717,920,643,918,641,910,612,902,592,892,570,859,556,858,504,904,482,912" shape="poly">        
+  
+  </map>
