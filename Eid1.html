@@ -1,11 +1,63 @@
 
 <img src="26n.jpg" usemap="#image-map">
-<audio id="mix" src="mix.mp3" preload="auto"></audio>
+<audio id="eid1" src="eid1.mp3" preload="auto"></audio>
+<audio id="eid2" src="eid2.mp3" preload="auto"></audio>
+<audio id="eid3" src="eid3.mp3" preload="auto"></audio>
+<audio id="eid4" src="eid4.mp3" preload="auto"></audio>
+<audio id="eid5" src="eid5.mp3" preload="auto"></audio>
 
 <script>
 
     function playmix() {
-        var audio = document.getElementById("mix");
+        var audio = document.getElementById("eid1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+    
+        function playmix() {
+        var audio = document.getElementById("eid2");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+    
+        function playmix() {
+        var audio = document.getElementById("eid3");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+    
+        function playmix() {
+        var audio = document.getElementById("eid4");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+    
+        function playmix() {
+        var audio = document.getElementById("eid5");
 
         if (audio.duration > 0 && !audio.paused) {
             audio.pause();
@@ -16,6 +68,7 @@
     }
 
 </script>
+
 <map name="image-map">
   
     <area target="_blank" alt="" title="" href="" onclick="javascript:playmix(); return false;"
