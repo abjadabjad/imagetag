@@ -1,0 +1,44 @@
+<img src="mm.png" usemap="#image-map">
+<audio id="mo1" src="mo1.mp3" preload="auto"></audio>
+<audio id="mo2" src="mo2.mp3" preload="auto"></audio>
+
+<script>
+
+  function mo1() {
+        var audio = document.getElementById("mo1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+    
+    
+      function mo2() {
+        var audio = document.getElementById("mo2");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+    
+    
+    
+    
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:mo1(); return false;"coords="600,1146,568,1154,559,1170,554,1180,556,1202,562,1224,564,1237,568,1244,583,1240,600,1226,624,1201,638,1183,639,1161,634,1151" shape="poly">
+  
+      <area target="_blank" alt="" title="" href="" onclick="javascript:mo2(); return false;"coords="533,1211,516,1218,513,1240,512,1265,512,1281,517,1295,526,1304,534,1298,545,1286,561,1268,567,1260,570,1250,554,1235" shape="poly">
+
+  
+</map>
