@@ -2,6 +2,7 @@
 
 <img src="mother3.png" usemap="#image-map">
 <audio id="mother3" src="mother3.mp3" preload="auto"></audio>
+<audio id="mo3" src="mo3.mp3" preload="auto"></audio>
 
 
 <script>
@@ -16,6 +17,24 @@
             audio.play();
         }
     }
+  
+    function mo3() {
+        var audio = document.getElementById("mo3");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+  
+  
+  
+  
+  
+  
+  
 </script>
 
 
@@ -23,7 +42,7 @@
   
   
     <area target="_blank" alt="" title="" href="" onclick="javascript:mother3(); return false;"coords="508,629,32" shape="circle">
-     <area target="_blank" alt="" title="" href="" onclick="javascript:mother3(); return false;"coords="632,627,36" shape="circle">
+     <area target="_blank" alt="" title="" href="" onclick="javascript:mo3(); return false;"coords="632,627,36" shape="circle">
   
   
 </map>
