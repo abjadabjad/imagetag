@@ -1,0 +1,30 @@
+
+
+<img src="kalemat.png" usemap="#image-map">
+<audio id="kalemat" src="kalemat.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function kalemat() {
+        var audio = document.getElementById("kalemat");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:kalemat(); return false;"coords="880,1093,86" shape="circle">
+  
+  
+  
+</map>
+
