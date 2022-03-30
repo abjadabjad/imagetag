@@ -1,0 +1,30 @@
+
+
+<img src="mem.png" usemap="#image-map">
+<audio id="mem" src="mem.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function mem() {
+        var audio = document.getElementById("mem");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:mem(); return false;"coords="880,1093,86" shape="circle">
+  
+  
+  
+</map>
+
