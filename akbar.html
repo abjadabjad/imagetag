@@ -4,7 +4,6 @@
 <audio id="1ak" src="1ak.mp3" preload="auto"></audio>
 <audio id="2ak" src="1ak.mp3" preload="auto"></audio>
 
-<audio id="3ak" src="3ak.mp3" preload="auto"></audio>
 <audio id="4ak" src="4ak.mp3" preload="auto"></audio>
 <audio id="5ak" src="5ak.mp3" preload="auto"></audio>
 
@@ -38,16 +37,7 @@
   
 
   
-    function ak3() {
-        var audio = document.getElementById("3ak");
-
-        if (audio.duration > 0 && !audio.paused) {
-            audio.pause();
-            audio.currentTime = 0;
-        } else {
-            audio.play();
-        }
-    }
+ 
     function ak4() {
         var audio = document.getElementById("4ak");
 
@@ -79,7 +69,6 @@
     <area target="_blank" alt="" title="" href="" onclick="javascript:ak1(); return false;"coords="184,452,253,522" shape="rect">
        <area target="_blank" alt="" title="" href="" onclick="javascript:ak2(); return false;"coords="154,816,231,882" shape="rect">
 
-     <area target="_blank" alt="" title="" href="" onclick="javascript:ak3(); return false;"coords="152,1342,208,1398" shape="rect">
      <area target="_blank" alt="" title="" href="" onclick="javascript:ak4(); return false;"coords="220,1681,269,1721" shape="rect">
      <area target="_blank" alt="" title="" href="" onclick="javascript:ak5(); return false;"coords="191,1751,216,1770" shape="rect">
   
