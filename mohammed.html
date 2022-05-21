@@ -1,0 +1,27 @@
+<img src="mohammed.jpg" usemap="#image-map">
+<audio id="mohammed" src="mohammed.mp3" preload="auto"></audio>
+
+
+
+<script>
+
+    function mohammed() {
+        var audio = document.getElementById("mohammed");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+</script>
+
+
+<map name="image-map">
+
+    <area target="_blank" alt="" title="" href="" onclick="javascript:mohammed(); return false;" coords="565,103,765,307" shape="rect">
+        
+  
+  </map>
