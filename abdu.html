@@ -14,6 +14,7 @@
 <audio id="abdu10" src="abdu10.mp3" preload="auto"></audio>
 <audio id="abdu11" src="abdu11.mp3" preload="auto"></audio>
 <audio id="abdu12" src="abdu12.mp3" preload="auto"></audio>
+<audio id="abdu13" src="abdu13.mp3" preload="auto"></audio>
 
 
 
@@ -152,6 +153,18 @@
         }
     }
   
+      function abdu13() {
+        var audio = document.getElementById("abdu13");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+  
+  
   
   
 </script>
@@ -184,6 +197,10 @@
       <area target="_blank" alt="" title="" href="" onclick="javascript:abdu11(); return false;"coords="525,892,628,984" shape="rect">
 
       <area target="_blank" alt="" title="" href="" onclick="javascript:abdu12(); return false;"coords="576,1018,683,1122" shape="rect">
+  
+        <area target="_blank" alt="" title="" href="" onclick="javascript:abdu13(); return false;"coords="103,1446,325,1694" shape="rect">
+
+  
 
 
   
