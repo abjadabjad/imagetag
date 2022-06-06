@@ -1,0 +1,47 @@
+
+
+<img src="happy.jpg" usemap="#image-map">
+<audio id="h1" src="h1.mp3" preload="auto"></audio>
+<audio id="h2" src="h2.mp3" preload="auto"></audio>
+
+
+
+<script>
+
+  function h1() {
+        var audio = document.getElementById("h1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+  
+   function h2() {
+        var audio = document.getElementById("h2");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+  
+  
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:h1(); return false;"coords="634,869,780,994" shape="rect">
+  
+      <area target="_blank" alt="" title="" href="" onclick="javascript:h2(); return false;"coords="395,799,564,971" shape="rect">
+
+  
+     <area target="" alt="" title="" href="https://twitter.com/abjadi2020"coords="383,1470,775,1616" shape="rect">
+</map>
+
