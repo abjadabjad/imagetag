@@ -27,6 +27,9 @@
 <audio id="shok" src="shok.mp3" preload="auto"></audio>
 <audio id="sorry" src="sorry.mp3" preload="auto"></audio>
 
+<audio id="rain" src="rain.mp3" preload="auto"></audio>
+
+
 
 
 
@@ -275,6 +278,18 @@
         }
     }
   
+
+
+    function rain() {
+        var audio = document.getElementById("rain");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
   
   
 </script>
@@ -321,6 +336,9 @@
             <area target="_blank" alt="" title="" href="" onclick="javascript:shok(); return false;"coords="339,1420,422,1507" shape="rect">
             <area target="_blank" alt="" title="" href="" onclick="javascript:sorry(); return false;"coords="300,347,352,421" shape="rect">
 
+
+
+            <area target="_blank" alt="" title="" href="" onclick="javascript:rain(); return false;"coords="604,156,762,488" shape="rect">
 
 
   
