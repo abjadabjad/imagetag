@@ -16,6 +16,8 @@
 <audio id="albal" src="albal.mp3" preload="auto"></audio>
 <audio id="badri" src="badri.mp3" preload="auto"></audio>
 <audio id="lahn" src="lahn.mp3" preload="auto"></audio>
+<audio id="athman" src="athman.mp3" preload="auto"></audio>
+
 
 
 
@@ -175,6 +177,18 @@
             audio.play();
         }
     }
+
+    function athman() {
+        var audio = document.getElementById("athman");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+  
   
   
   
@@ -211,6 +225,8 @@
             <area target="_blank" alt="" title="" href="" onclick="javascript:albal(); return false;"coords="132,1476,305,1655" shape="rect">
             <area target="_blank" alt="" title="" href="" onclick="javascript:badri(); return false;"coords="192,344,284,433" shape="rect">
             <area target="_blank" alt="" title="" href="" onclick="javascript:lahn(); return false;"coords="240,1351,323,1447" shape="rect">
+            <area target="_blank" alt="" title="" href="" onclick="javascript:athman(); return false;"coords="100,211,202,322" shape="rect">
+
 
 
 
