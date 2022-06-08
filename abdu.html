@@ -30,6 +30,8 @@
 <audio id="rain" src="rain.mp3" preload="auto"></audio>
 <audio id="h2" src="h2.mp3" preload="auto"></audio>
 <audio id="guest" src="guest.mp3" preload="auto"></audio>
+<audio id="ensan" src="ensan.mp3" preload="auto"></audio>
+
 
 
 
@@ -316,6 +318,17 @@
             audio.play();
         }
     }
+
+    function ensan() {
+        var audio = document.getElementById("ensan");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
   
   
 </script>
@@ -368,6 +381,7 @@
             <area target="_blank" alt="" title="" href="" onclick="javascript:h2(); return false;"coords="170,137,394,195" shape="rect">
             <area target="_blank" alt="" title="" href="" onclick="javascript:guest(); return false;"coords="420,1324,500,1372" shape="rect">
 
+            <area target="_blank" alt="" title="" href="" onclick="javascript:ensan(); return false;"coords="527,1140,587,1253" shape="rect">
 
   
 
