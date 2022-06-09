@@ -23,6 +23,9 @@
 
 <audio id="takhrti" src="takhrti.mp3" preload="auto"></audio>
 <audio id="tsdk" src="tsdk.mp3" preload="auto"></audio>
+<audio id="miladk" src="miladk.mp3" preload="auto"></audio>
+<audio id="zamay" src="zamay.mp3" preload="auto"></audio>
+
 
 
 
@@ -256,6 +259,34 @@
         }
     } 
   
+
+
+
+    function miladk() {
+        var audio = document.getElementById("miladk");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    } 
+
+
+
+    function zamay() {
+        var audio = document.getElementById("zamay");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    } 
+
+
 </script>
 
 
@@ -296,8 +327,10 @@
 
             <area target="_blank" alt="" title="" href="" onclick="javascript:takhrti(); return false;"coords="587,1036,672,1104" shape="rect">
             <area target="_blank" alt="" title="" href="" onclick="javascript:tsdk(); return false;"coords="93,345,184,432" shape="rect">
-      
-  
+            <area target="_blank" alt="" title="" href="" onclick="javascript:miladk(); return false;"coords="93,345,184,432" shape="rect">
+
+            <area target="_blank" alt="" title="" href="" onclick="javascript:zamay(); return false;"coords="93,345,184,432" shape="rect">
+
 
 
   
