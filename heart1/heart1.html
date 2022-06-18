@@ -1,0 +1,53 @@
+
+
+<img src="heat1.jpg" usemap="#image-map">
+<audio id="heart1" src="heart1.mp3" preload="auto"></audio>
+<audio id="heart1w" src="heart1w.mp3" preload="auto"></audio>
+
+
+
+
+<script>
+
+  function heart1() {
+        var audio = document.getElementById("heart1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+    function heart1w() {
+        var audio = document.getElementById("heart1w");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+  
+
+
+
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:heart1(); return false;"coords="880,221,1058,431" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:heart1w(); return false;" coords="66,235,269,422" shape="rect">
+  
+
+  
+    
+  
+</map>
+
