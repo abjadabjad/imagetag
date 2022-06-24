@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 <img src="birds.jpg" usemap="#image-map">
@@ -77,3 +78,84 @@
   
 </map>
 
+=======
+
+
+<img src="birds.jpg" usemap="#image-map">
+<audio id="birds1" src="birds1.mp3" preload="auto"></audio>
+<audio id="birds2" src="birds2.mp3" preload="auto"></audio>
+<audio id="birds3" src="birds3.mp3" preload="auto"></audio>
+<audio id="water" src="water.mp3" preload="auto"></audio>
+
+
+
+<script>
+
+  function birds1() {
+        var audio = document.getElementById("birds1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+    function birds2() {
+        var audio = document.getElementById("birds2");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+    function birds3() {
+        var audio = document.getElementById("birds3");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+    function water() {
+        var audio = document.getElementById("water");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+
+
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:birds1(); return false;"coords="497,745,640,848" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:birds2(); return false;"coords="496,997,627,1123" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:birds3(); return false;"coords="568,1754,664,1836" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:water(); return false;"coords="454,1755,567,1838" shape="rect">
+
+  
+  
+  <area target="" alt="" title="" href="https://twitter.com/abjadi2020" coords="93,1855,1035,2009" shape="rect">
+  
+  
+</map>
+
+>>>>>>> Stashed changes
