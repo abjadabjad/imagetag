@@ -1,0 +1,24 @@
+<img src="sora.png" usemap="#image-map">
+<audio id="sora" src="sora.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function sora() {
+        var audio = document.getElementById("sora");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:sora(); return false; " coords="2618,1064,127" shape="circle">
+</map>
