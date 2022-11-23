@@ -1,0 +1,24 @@
+<img src="yarb.jpg" usemap="#image-map">
+<audio id="1" src="1.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function saudi() {
+        var audio = document.getElementById("1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:saudi(); return false;"coords="351,1497,751,1855" shape="rect">
+</map>
