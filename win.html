@@ -1,0 +1,27 @@
+
+
+<img src="win.jpg" usemap="#image-map">
+<audio id="saudi" src="saudi.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function saudi() {
+        var audio = document.getElementById("saudi");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:saudi(); return false;"coords="496,158,633,299" shape="rect">
+</map>
+
