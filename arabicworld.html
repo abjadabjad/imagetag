@@ -1,0 +1,47 @@
+
+
+<img src="sad.jpg" usemap="#image-map">
+<audio id="sad" src="sad.mp3" preload="auto"></audio>
+<audio id="sad1" src="sad1.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function sad() {
+        var audio = document.getElementById("sad");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+function sad1() {
+        var audio = document.getElementById("sad1");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:sad(); return false;"coords="835,698,1117,990" shape="rect">
+  
+  
+      <area target="_blank" alt="" title="" href="" onclick="javascript:sad1(); return false;"coords="79,1070,367,1357" shape="rect">
+
+
+
+</map>
+
