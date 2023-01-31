@@ -1,7 +1,8 @@
 
 
-<img src="flower1.png" usemap="#image-map">
-<audio id="flower1" src="bird.mp3" preload="auto"></audio>
+<img src="flower1.jpg" usemap="#image-map">
+<audio id="flower1" src="flower1.mp3" preload="auto"></audio>
+<audio id="flower2" src="flower2.mp3" preload="auto"></audio>
 
 
 <script>
@@ -16,12 +17,27 @@
             audio.play();
         }
     }
+
+  function flower2() {
+        var audio = document.getElementById("flower2");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
 </script>
 
 
 <map name="image-map">
   
   
-    <area target="_blank" alt="" title="" href="" onclick="javascript:flower1(); return false; " coords="1027,115,912,167,958,230,961,298,965,303,1075,209,1075,163" shape="poly">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:flower1(); return false; " coords="198,906,356,1064" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:flower2(); return false; " coords="837,625,963,754" shape="rect">
+
 </map>
 
