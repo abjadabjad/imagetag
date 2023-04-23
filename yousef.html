@@ -1,0 +1,24 @@
+<img src="yousef.jpg" usemap="#image-map">
+<audio id="yousef" src="yousef.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function yousef() {
+        var audio = document.getElementById("yousef");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+    <area target="_blank" alt="" title="" href="" onclick="javascript:yousef(); return false; "  coords="428,235,691,488" shape="rect">
+</map>
