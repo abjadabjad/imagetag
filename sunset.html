@@ -1,0 +1,28 @@
+<img src="sunset.png" usemap="#image-map">
+<audio id="sunset" src="sunset.mp3" preload="auto"></audio>
+
+
+<script>
+
+  function sunset() {
+        var audio = document.getElementById("sunset");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+</script>
+
+
+<map name="image-map">
+  
+  
+
+    <area target="_blank" alt="" title="" href="" onclick="javascript:sunset(); return false;"
+       <area target="" alt="" title="" href="" coords="483,1289,671,1464" shape="poly">
+
+
+</map>
