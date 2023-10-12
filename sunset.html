@@ -1,10 +1,8 @@
 <img src="sunset.png" usemap="#image-map">
 <audio id="sunset" src="sunset.mp3" preload="auto"></audio>
 
-
 <script>
-
-  function sun() {
+    function sun() {
         var audio = document.getElementById("sunset");
 
         if (audio.duration > 0 && !audio.paused) {
@@ -16,14 +14,6 @@
     }
 </script>
 
-
 <map name="image-map">
-  
-  
-
-    <area target="_blank" alt="" title="" href="" onclick="javascript:sun(); return false;"
-       <area target="" alt="" title="" href="" coords="483,1289,671,1464" shape="poly">
-</area>
-
-
+    <area target="_blank" alt="" title="" href="#" onclick="javascript:sun(); return false;" shape="poly" coords="483,1289,671,1464">
 </map>
