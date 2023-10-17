@@ -1,21 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Remove margin and padding for both img and map */
+  img {
+    margin: 0;
+    padding: 0;
+  }
+  map {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+
 <img src="sunset.jpg" usemap="#image-map">
 <audio id="sunsett" src="sunset.mp3" preload="auto"></audio>
 
 <script>
-    function sunn() {
-        var audio = document.getElementById("sunsett");
+function sunn() {
+    var audio = document.getElementById("sunsett");
 
-        if (audio.duration > 0 && !audio.paused) {
-            audio.pause();
-            audio.currentTime = 0;
-        } else {
-            audio.play();
-        }
+    if (audio.duration > 0 && !audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+    } else {
+        audio.play();
     }
+}
 </script>
 
 <map name="image-map">
-
-    <area target="_blank" alt="" title="" href="" onclick="javascript:sunn(); return false;"coords="437,1263,723,1467" shape="rect">
-
+    <area target="_blank" alt="" title="" href="" onclick="javascript:sunn(); return false;" coords="437,1263,723,1467" shape="rect">
 </map>
+
+</body>
+</html>
