@@ -21,6 +21,9 @@
 
 <audio id="zena" src="zena.mp3" preload="auto"></audio>
 
+<audio id="palestien" src="palestien.mp3" preload="auto"></audio>
+
+
 
 
 
@@ -176,6 +179,19 @@
 
 
 
+function palestien() {
+        var audio = document.getElementById("palestien");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+
 </script>
 
 
@@ -195,6 +211,9 @@
     <area target="_blank" alt="" title="" href="" onclick="javascript:njom(); return false;"coords="532,310,597,353" shape="rect">
     <area target="_blank" alt="" title="" href="" onclick="javascript:yaweli(); return false;" coords="867,491,909,540" shape="rect">
     <area target="_blank" alt="" title="" href="" onclick="javascript:nora(); return false;"coords="212,476,276,545" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:palestien(); return false;"coords="834,250,794,342,769,352,699,316,636,299,547,299,491,307,414,324,361,348,351,360,330,286,315,237,405,197,530,172,614,177,713,186,784,223" shape="poly">
+
+
 
 
 
@@ -204,7 +223,6 @@
 
     <area target="_blank" alt="" title="" href="https://arz.wikipedia.org/wiki/%D9%81%D8%B1%D9%8A%D8%AF_%D8%A7%D9%84%D8%A3%D8%B7%D8%B1%D8%B4"coords="576,800,763,883" shape="rect">
     <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Farid_al-Atrash"coords="558,882,873,913" shape="rect">
-
 
   
 </map>
