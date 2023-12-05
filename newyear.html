@@ -2,9 +2,12 @@
 
 <img src="newyear.jpg" usemap="#image-map">
 <audio id="najat" src="najat.mp3" preload="auto"></audio>
+<audio id="sheren" src="sheren.mp3" preload="auto"></audio>
 
 
 <script>
+
+
 
   function najat() {
         var audio = document.getElementById("najat");
@@ -16,6 +19,24 @@
             audio.play();
         }
     }
+
+
+ function sheren() {
+        var audio = document.getElementById("sheren");
+
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
+
+
+
+
+
+
 </script>
 
 
@@ -23,5 +44,7 @@
   
   
     <area target="_blank" alt="" title="" href="" onclick="javascript:najat(); return false; " coords="686,411,998,698" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:sheren(); return false; " coords="134,402,479,698" shape="rect">
+
 </map>
 
