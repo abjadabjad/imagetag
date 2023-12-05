@@ -3,6 +3,7 @@
 <img src="newyear.jpg" usemap="#image-map">
 <audio id="najat" src="najat.mp3" preload="auto"></audio>
 <audio id="sheren" src="sheren.mp3" preload="auto"></audio>
+<audio id="wardeh" src="wardeh.mp3" preload="auto"></audio>
 
 
 <script>
@@ -32,7 +33,16 @@
         }
     }
 
+ function wardeh() {
+        var audio = document.getElementById("wardeh");
 
+        if (audio.duration > 0 && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        } else {
+            audio.play();
+        }
+    }
 
 
 
@@ -45,6 +55,8 @@
   
     <area target="_blank" alt="" title="" href="" onclick="javascript:najat(); return false; " coords="686,411,998,698" shape="rect">
     <area target="_blank" alt="" title="" href="" onclick="javascript:sheren(); return false; " coords="134,402,479,698" shape="rect">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:wardeh(); return false; " coords="212,1061,361,1177,492,1216,624,1227,663,1215,772,1170,892,1088,914,1039,866,1012,817,1020,692,1086,596,1104,487,1106,404,1062,294,1021,275,1008,237,1036" shape="poly">
+
 
 </map>
 
