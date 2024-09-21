@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+</body>
+<title>Hii</title>
+<img src="newsad.jpg" usemap="#image-map" > <!-- Adjust margin-right to create space between the image and map -->
+<audio id="newsad" src="newsad.mp3" preload="auto"></audio>
+
+<script>
+function newsad() {
+    var audio = document.getElementById("newsad");
+
+    if (audio.duration > 0 && !audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+    } else {
+        audio.play();
+    }
+}
+</script>
+
+<map name="image-map">
+    <area target="_blank" alt="" title="" href="" onclick="javascript:newsad(); return false;" coords="436,1437,726,1687" shape="rect">
+</map>
+
+
+</html>
+
